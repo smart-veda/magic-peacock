@@ -1,0 +1,39 @@
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+html,
+body {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    padding: 50px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#content {
+    min-height: 100%;
+    overflow: hidden;
+    text-align: -webkit-center;
+}
+
+header {
+    margin-top: -50px;
+    height: 50px;
+    background-color: red;
+}
+
+footer {
+    margin-bottom: -50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+}
+/* had to take the margin off the p as in some browsers this can add extra margin to #content div*/

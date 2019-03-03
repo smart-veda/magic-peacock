@@ -1,0 +1,33 @@
+.ourexpertise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    background-color:rgba(228, 228, 26, 0.712);
+}
+
+.heading {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+}
+
+.event-description {
+    text-align: center; 
+    width: 100%; 
+    vertical-align: middle; 
+    display: table-cell
+}
+
+.event-description-text {
+    width:80%; 
+    display: inline-block;
+}

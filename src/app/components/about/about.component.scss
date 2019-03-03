@@ -1,0 +1,23 @@
+.fill {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../../assets/images/peacock1.png');
+    height: 80vh;
+    width: 100%;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: -webkit-fill-available;
+    background-color: lightpink;
+}
+
+.about-heading {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 20px;
+}

@@ -1,0 +1,48 @@
+<ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="[first, second, third]">
+  <div *nguCarouselDef="let item;" class="item">
+    <div class="tile">
+      <ng-container *ngTemplateOutlet="item"></ng-container>
+    </div>
+  </div>
+  <ng-template #first>
+    <div class="testimonial-text">
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.Ut enim ad minim veniam, quis nostrud
+      </blockquote>
+      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    </div>
+  </ng-template>
+  <ng-template #second>
+    <div class="testimonial-text">
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.Ut enim ad minim veniam, quis nostrud
+      </blockquote>
+      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    </div>
+  </ng-template>
+  <ng-template #third>
+    <div class="testimonial-text">
+      <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.Ut enim ad minim veniam, quis nostrud
+      </blockquote>
+      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    </div>
+  </ng-template>
+  <button NguCarouselNext class="rightRs">></button>
+  <button NguCarouselPrev class="leftRs">
+    </button> <ul class="myPoint" NguCarouselPoint>
+      <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint"
+        (click)="myCarousel.moveTo(j)"></li>
+      </ul>
+</ngu-carousel>
+<div>
+  <div>
+    <img src="assets/images/companyLogos.png" alt="">
+  </div>
+</div>
